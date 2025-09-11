@@ -3,52 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons Playground</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Tailwind Outline vs Ring</title>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100 space-y-6">
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100 gap-6 p-10">
 
-  <!-- Normal Button -->
-<!-- Normal -->
-<button class="bg-blue-700 text-white px-4 py-2 rounded-xl shadow-md font-semibold">
-  Normal
-</button>
+  <!-- 1. Basic Button -->
+  <button class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
+    Basic
+  </button>
 
-<!-- Outline White -->
-<button class="bg-green-600 text-white px-4 py-2 rounded-xl shadow-md font-semibold 
-               outline outline-2 outline-white">
-  Outline White
-</button>
+  <!-- 2. Outline Button -->
+  <button class="border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition">
+    Outline
+  </button>
 
-<!-- Outline Black -->
-<button class="bg-yellow-500 text-black px-4 py-2 rounded-xl shadow-md font-semibold 
-               outline outline-2 outline-black">
-  Outline Black
-</button>
+  <!-- 3. Gradient Button -->
+  <button class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg shadow-lg hover:scale-105 transform transition">
+    Gradient
+  </button>
 
-<!-- Focus White Outline -->
-<button class="bg-purple-600 text-white px-4 py-2 rounded-xl shadow-md font-semibold 
-               focus:outline focus:outline-2 focus:outline-white">
-  Focus White Outline
-</button>
+  <!-- 4. Pill Button -->
+  <button class="bg-green-500 text-white px-8 py-2 rounded-full font-semibold shadow-md hover:bg-green-600 transition">
+    Pill
+  </button>
 
-<!-- Focus Black Outline -->
-<button class="bg-pink-600 text-white px-4 py-2 rounded-xl shadow-md font-semibold 
-               focus:outline focus:outline-2 focus:outline-black">
-  Focus Black Outline
-</button>
+  <!-- 5. Focus Ring -->
+  <button class="bg-red-500 text-white px-6 py-2 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-red-300 hover:bg-red-600 transition">
+    Focus Ring
+  </button>
 
-<!-- Ring White -->
-<button class="bg-red-600 text-white px-4 py-2 rounded-xl shadow-md font-semibold 
-               focus:ring-2 focus:ring-white">
-  Ring White
-</button>
+  <!-- 6. Disabled Button -->
+  <button class="bg-gray-400 text-white px-6 py-2 rounded-lg shadow-md cursor-not-allowed opacity-60">
+    Disabled
+  </button>
 
-<!-- Ring Black -->
-<button class="bg-indigo-600 text-white px-4 py-2 rounded-xl shadow-md font-semibold 
-               focus:ring-2 focus:ring-black">
-  Ring Black
-</button>
+  <!-- 7. Icon Button -->
+  <button class="flex items-center gap-2 bg-indigo-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-indigo-700 transition">
+    <span>🔍</span> Search
+  </button>
+
+  <!-- 8. Shadow XL Button -->
+  <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg shadow-xl hover:shadow-2xl transition">
+    Shadow XL
+  </button>
+
+  <!-- 9. Uppercase Button -->
+  <button class="bg-pink-500 text-white px-6 py-2 rounded-lg font-bold uppercase tracking-wider hover:bg-pink-600 transition">
+    Uppercase
+  </button>
+
+  <!-- 10. Outline Black -->
+  <button class="border-2 border-black text-black px-6 py-2 rounded-lg font-semibold hover:bg-black hover:text-white transition">
+    Outline Black
+  </button>
+
+  <!-- 11. Hover Scale -->
+  <button class="bg-cyan-500 text-white px-6 py-2 rounded-lg shadow-md transform hover:scale-110 transition">
+    Hover Scale
+  </button>
+
+  <!-- 12. Hover Translate -->
+  <button class="bg-teal-600 text-white px-6 py-2 rounded-lg shadow-md transform hover:-translate-y-1 transition">
+    Hover Translate
+  </button>
 
 </body>
 </html>
