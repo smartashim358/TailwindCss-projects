@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind Outline vs Ring</title>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100 space-y-6">
+
+  <!-- Normal Button -->
+<!-- Normal -->
+<button class="bg-blue-700 text-white px-4 py-2 rounded-xl shadow-md font-semibold">
+  Normal
+</button>
+
+<!-- Outline White -->
+<button class="bg-green-600 text-white px-4 py-2 rounded-xl shadow-md font-semibold 
+               outline outline-2 outline-white">
+  Outline White
+</button>
+
+<!-- Outline Black -->
+<button class="bg-yellow-500 text-black px-4 py-2 rounded-xl shadow-md font-semibold 
+               outline outline-2 outline-black">
+  Outline Black
+</button>
+
+<!-- Focus White Outline -->
+<button class="bg-purple-600 text-white px-4 py-2 rounded-xl shadow-md font-semibold 
+               focus:outline focus:outline-2 focus:outline-white">
+  Focus White Outline
+</button>
+
+<!-- Focus Black Outline -->
+<button class="bg-pink-600 text-white px-4 py-2 rounded-xl shadow-md font-semibold 
+               focus:outline focus:outline-2 focus:outline-black">
+  Focus Black Outline
+</button>
+
+<!-- Ring White -->
+<button class="bg-red-600 text-white px-4 py-2 rounded-xl shadow-md font-semibold 
+               focus:ring-2 focus:ring-white">
+  Ring White
+</button>
+
+<!-- Ring Black -->
+<button class="bg-indigo-600 text-white px-4 py-2 rounded-xl shadow-md font-semibold 
+               focus:ring-2 focus:ring-black">
+  Ring Black
+</button>
+
+</body>
+</html>
