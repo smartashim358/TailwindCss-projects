@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards Playground</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center p-10">
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- 1. Simple Card -->
+    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+      <h2 class="text-xl font-bold mb-2">Simple Card</h2>
+      <p class="text-gray-600">This is a basic card using Tailwind utilities. Add padding, shadow, and rounded corners.</p>
+    </div>
+
+    <!-- 2. Card with Image -->
+    <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+      <img src="https://picsum.photos/300/200" alt="Random" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-semibold">Card with Image</h2>
+        <p class="text-gray-600 text-sm">This card has an image on top with text content below.</p>
+      </div>
+    </div>
+
+    <!-- 3. Profile Card -->
+    <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col items-center">
+      <img src="https://i.pravatar.cc/100" alt="Profile" class="w-20 h-20 rounded-full mb-4">
+      <h3 class="text-lg font-semibold">John Doe</h3>
+      <p class="text-gray-500 text-sm mb-4">Frontend Developer</p>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">Follow</button>
+    </div>
+
+    <!-- 4. Product Card -->
+    <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+      <img src="https://picsum.photos/300/200?2" alt="Product" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-semibold">Cool Sneakers</h2>
+        <p class="text-gray-600 text-sm mb-2">Comfortable & stylish sneakers.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-green-600 font-bold text-lg">$49.99</span>
+          <button class="bg-green-500 text-white px-4 py-1 rounded-lg hover:bg-green-600 transition">Buy</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
