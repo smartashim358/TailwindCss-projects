@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOS Zoom Animations</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <div class="h-screen flex items-center justify-center bg-blue-600 text-white">
+    <h1 class="text-4xl font-bold">Scroll Down 👇</h1>
+  </div>
+
+  <section class="max-w-4xl mx-auto py-20 grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
+    
+    <!-- Zoom In -->
+    <div class="bg-white shadow-lg rounded-xl p-6 text-center"
+         data-aos="zoom-in" data-aos-duration="1000">
+      <h2 class="text-xl font-bold mb-2">Zoom In</h2>
+      <p class="text-gray-600">This card zooms in as you scroll.</p>
+    </div>
+
+    <!-- Zoom Out -->
+    <div class="bg-yellow-400 shadow-lg rounded-xl p-6 text-center"
+         data-aos="zoom-out" data-aos-duration="1000">
+      <h2 class="text-xl font-bold mb-2">Zoom Out</h2>
+      <p class="text-gray-800">This card zooms out when it enters viewport.</p>
+    </div>
+
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+</body>
+</html>
