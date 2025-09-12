@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOS Demo - Step 1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+   <div class="flex flex-col  space-y-3  bg-gradient-to-r from-blue-600 to-purple-600 text-white items-center h-screen justify-center">
+    <h3 class=" text-5xl font-bold">Welcome  <span class="text-black italic">to</span> our website</h3>
+    <h1 class=" text-4xl fon-bold">Scroll Down ⬇️</h1>
+   </div>
+   <section class="w-full grid sm:grid-cols-1 md:grid-cols-3 gap-8 px-6 py-12 space-x-8">
+    <div class="w-72 bg-white rounded-xl  text-center mt-24 shadow-xl p-4 " data-aos="fade-right" data-aos-delay="400" >
+        <img src="delux.jpg" alt="delux.jpg" class="w-full rounded-xl object-cover mb-4">
+        <h1 class="text-2xl font-bold">Hostel Room</h1>
+        <p class="text-gray-900 mb-4">amazing hotal experience with quality bed and service</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-xl  shadow-xl text-xl hover:translate-y-1.5">Learn More</button>
+    </div>
+     <div class="w-72 bg-white rounded-xl  text-center mt-24 shadow-xl p-4 " data-aos="fade-up" data-aos-dely="400"  >
+        <img src="pre.webp" alt="delux.jpg" class="w-full rounded-xl object-cover mb-4">
+        <h1 class="text-2xl font-bold">Hostel Room</h1>
+        <p class="text-gray-900 mb-4">amazing hotal experience with quality bed and service</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-xl  shadow-xl text-xl hover:translate-y-1.5">Learn More</button>
+    </div>
+     <div class="w-72 bg-white rounded-xl  text-center mt-24 shadow-xl p-4 " data-aos="fade-left" data-aos-delay="400" >
+        <img src="neapl.jpg" alt="delux.jpg" class="w-full rounded-xl object-cover mb-4">
+        <h1 class="text-2xl font-bold">Hostel Room</h1>
+        <p class="text-gray-900 mb-4">amazing hotal experience with quality bed and service</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-xl  shadow-xl text-xl hover:translate-y-1.5">Learn More</button>
+    </div>
+
+   </section>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // 1 second
+      once: true     // only animate once
+    });
+  </script>
+</body>
+</html>
