@@ -35,31 +35,3 @@ This repository contains a collection of **front-end projects built using Tailwi
    ```bash
    git clone https://github.com/your-username/tailwindcss-projects.git
 cd tailwindcss-projects
-How to Use
-
-Open any project folder.
-
-Edit HTML files to customize content.
-
-Modify Tailwind classes to experiment with layout, colors, spacing, and animations.
-
-Use the browser to preview changes in real-time.
-
-Author
-
-Ashim Nepali
-
-Front-end developer passionate about modern CSS frameworks.
-
-Focus on building responsive, interactive, and visually appealing websites.
-
-License
-
-This repository is open-source and free to use for learning and practice purposes.
-
-
----
-
-If you want, I can also **add badges for Tailwind version, last update, and license** to make it look **professional on GitHub**.  
-
-Do you want me to do that next?
