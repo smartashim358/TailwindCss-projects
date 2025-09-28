@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-lg hidden md:block">
+      <div class="p-6 font-bold text-2xl text-sky-600 border-b">
+        MyDash
+      </div>
+      <nav class="p-4 space-y-3">
+        <a href="#" class="block p-2 rounded hover:bg-sky-100">🏠 Dashboard</a>
+        <a href="#" class="block p-2 rounded hover:bg-sky-100">📊 Analytics</a>
+        <a href="#" class="block p-2 rounded hover:bg-sky-100">🛒 Orders</a>
+        <a href="#" class="block p-2 rounded hover:bg-sky-100">⚙️ Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+      
+      <!-- Top Navbar -->
+      <header class="bg-white shadow p-4 flex items-center justify-between">
+        <input 
+          type="text" 
+          placeholder="Search..." 
+          class="border rounded px-3 py-2 w-1/3"
+        >
+        <div class="flex items-center gap-4">
+          <span class="font-medium">Hello, User 👋</span>
+          <img src="https://i.pravatar.cc/40" class="w-10 h-10 rounded-full border" />
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <main class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
+        
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-xl shadow hover:scale-[1.02] transition">
+          <h3 class="text-lg font-bold text-sky-600">Total Sales</h3>
+          <p class="text-3xl font-bold mt-2">$12,345</p>
+          <p class="text-sm text-gray-500">+12% from last month</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-xl shadow hover:scale-[1.02] transition">
+          <h3 class="text-lg font-bold text-green-600">New Users</h3>
+          <p class="text-3xl font-bold mt-2">1,234</p>
+          <p class="text-sm text-gray-500">+5% this week</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded-xl shadow hover:scale-[1.02] transition">
+          <h3 class="text-lg font-bold text-pink-600">Orders</h3>
+          <p class="text-3xl font-bold mt-2">567</p>
+          <p class="text-sm text-gray-500">Pending: 32</p>
+        </div>
+
+      </main>
+    </div>
+
+  </body>
+</html>
