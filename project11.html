@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Login Form</title>
+  </head>
+  <body class="flex justify-center items-center min-h-screen  p-4 bg-transparent">
+    <form action="#" class="bg-white flex flex-col gap-4 p-6 rounded-2xl shadow-xl/30 w-full max-w-sm">
+      <h2 class="text-center font-bold text-2xl text-sky-700 mb-2">Login</h2>
+
+      <!-- Email -->
+      <div class="flex flex-col">
+        <label for="email" class="text-lg font-semibold text-rose-800 mb-1">Email</label>
+        <input 
+          type="email" 
+          id="email"
+          placeholder="Enter your email" 
+          required 
+          class="border-b-2 border-fuchsia-700 px-2 py-1 text-center rounded-md focus:outline-none focus:border-sky-600 transition duration-300"
+        >
+      </div>
+
+      <!-- Password -->
+      <div class="flex flex-col">
+        <label for="password" class="text-lg font-semibold text-rose-800 mb-1">Password</label>
+        <input 
+          type="password" 
+          id="password"
+          placeholder="Enter your password" 
+          required 
+          class="border-b-2 border-fuchsia-700 px-2 py-1 text-center rounded-md focus:outline-none focus:border-sky-600 transition duration-300"
+        >
+      </div>
+
+      <!-- Buttons -->
+      <button 
+        type="submit" 
+        class="mt-4 bg-sky-700 hover:bg-sky-800 text-white font-bold py-2 rounded-lg transition duration-300"
+      >
+        Login
+      </button>
+
+      <!-- Links -->
+      <div class="flex justify-between mt-3 text-sm font-semibold">
+        <a href="#account" class="text-blue-800 hover:underline">Create account</a>
+        <a href="#forget-password" class="text-rose-700 hover:underline">Forgot password?</a>
+      </div>
+    </form>
+  </body>
+</html>
