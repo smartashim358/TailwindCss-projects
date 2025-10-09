@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-200 m-0 p-0 min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-4 bg-white shadow">
+      <h1 class="text-2xl font-bold text-blue-700">TailwindCss</h1>
+      <ul class="flex gap-6">
+        <li><a href="#" class="text-xl hover:text-blue-700 font-medium">Home</a></li>
+        <li><a href="#" class="text-xl hover:text-blue-700 font-medium">About</a></li>
+        <li><a href="#" class="text-xl hover:text-blue-700 font-medium">Contact</a></li>
+        <li><a href="#" class="text-xl hover:text-blue-700 font-medium">Service</a></li>
+      </ul>
+      <div class="flex gap-2">
+        <input
+          type="text"
+          placeholder="Search"
+          class="border-2 border-blue-700 rounded p-2 text-lg focus:outline-none"
+        />
+        <button class="px-4 py-2 bg-blue-700 text-white rounded text-lg hover:bg-blue-800">
+          Search
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main layout -->
+    <div class="flex flex-1">
+      <!-- Sidebar -->
+      <aside class="w-64  shadow-md p-6 border-t-2 border-fuchsia-700 bg-gray-800 ">
+        <ul class="space-y-4 text-lg font-medium text-gray-700 text-white">
+          <li class="hover:text-blue-700 cursor-pointer">Books</li>
+          <li class="hover:text-blue-700 cursor-pointer">Projects</li>
+          <li class="hover:text-blue-700 cursor-pointer">Notes</li>
+          <li class="hover:text-blue-700 cursor-pointer">Collections</li>
+          <li class="hover:text-blue-700 cursor-pointer">Settings</li>
+          <li class="hover:text-blue-700 cursor-pointer">System</li>
+        </ul>
+      </aside>
+
+      <!-- Main content -->
+      <main class="flex-1 p-8">
+        <h2 class="text-3xl font-bold mb-4 text-gray-800">Welcome to Tailwind Layout</h2>
+        <p class="text-lg text-gray-600">
+          This is the main content area. You can add your projects, notes, and more here.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
